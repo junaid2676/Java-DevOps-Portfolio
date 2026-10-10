@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junaid Junaid — Computer Science Student & DevOps Enthusiast. Portfolio showcasing CI/CD, Docker, Kubernetes, and cloud skills.">
+    <title>Junaid Junaid | DevOps & Cloud Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">{</span>Junaid<span class="logo-bracket">}</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Junaid Junaid</h1>
+                <h2 class="hero-title">
+                    <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-summary">
+                    Computer Science student at Anglia Ruskin University with hands-on experience
+                    building end-to-end DevOps pipelines. Passionate about CI/CD, containers,
+                    and cloud infrastructure.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/junaid2676" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="mailto:junaidj1266@gmail.com" class="social-link" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                    <a href="tel:+447949298589" class="social-link" aria-label="Phone">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">junaid@devops:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> cat about.txt</p>
+                        <p class="comment"># Aspiring DevOps Engineer</p>
+                        <p><span class="prompt">$</span> docker --version</p>
+                        <p>Docker version 24.x</p>
+                        <p><span class="prompt">$</span> kubectl get nodes</p>
+                        <p>NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATUS&nbsp;&nbsp;ROLES</p>
+                        <p>minikube&nbsp;&nbsp;&nbsp;&nbsp;Ready&nbsp;&nbsp;&nbsp;control-plane</p>
+                        <p><span class="prompt">$</span> echo "Ready to build pipelines!"</p>
+                        <p class="output">Ready to build pipelines!</p>
+                        <p><span class="prompt">$</span> <span class="cursor-blink">_</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span></span>
+        </a>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">01. About Me</p>
+                <h2 class="section-title">A bit about my journey</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a <strong>Computer Science student at Anglia Ruskin University</strong> in Cambridge,
+                        with hands-on experience building end-to-end DevOps pipelines using
+                        <strong>Git, Jenkins, Docker, and Kubernetes</strong>, along with foundational
+                        <strong>AWS</strong> knowledge.
+                    </p>
+                    <p>
+                        My background combines technical problem-solving with proven soft skills from
+                        hospitality management — <strong>team leadership, training, conflict resolution,
+                        and delivering under pressure</strong> in high-volume environments.
+                    </p>
+                    <p>
+                        I'm seeking <strong>Junior DevOps, Platform, Cloud, or CI/CD Engineer</strong> roles
+                        where both my technical and interpersonal strengths can contribute.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <span class="highlight-number">1+</span>
+                            <span class="highlight-label">End-to-End Pipeline Built</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-number">5+</span>
+                            <span class="highlight-label">DevOps Tools Mastered</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-number">3+</span>
+                            <span class="highlight-label">Years Leadership</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <h3>Quick Facts</h3>
+                    <ul class="facts-list">
+                        <li><span class="fact-label">Location</span><span class="fact-value">Cambridge, UK</span></li>
+                        <li><span class="fact-label">Email</span><span class="fact-value">junaidj1266@gmail.com</span></li>
+                        <li><span class="fact-label">Phone</span><span class="fact-value">+44 7949 298589</span></li>
+                        <li><span class="fact-label">Focus</span><span class="fact-value">DevOps / Cloud / CI-CD</span></li>
+                        <li><span class="fact-label">Status</span><span class="fact-value available">Available for roles</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">02. Skills</p>
+                <h2 class="section-title">Technologies & Strengths</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z M4 9h16 M9 4v16"/></svg>
+                    </div>
+                    <h3>CI/CD &amp; Automation</h3>
+                    <ul class="skill-list">
+                        <li>Jenkins (pipelines, plugins, webhooks)</li>
+                        <li>GitHub Actions &amp; Webhooks</li>
+                        <li>Build Automation</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05 M12 22.08V12"/></svg>
+                    </div>
+                    <h3>Containers &amp; Orchestration</h3>
+                    <ul class="skill-list">
+                        <li>Docker &amp; Dockerfile</li>
+                        <li>Docker Hub</li>
+                        <li>Kubernetes (Minikube) &amp; kubectl</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2 M12 20v2 M4.93 4.93l1.41 1.41 M17.66 17.66l1.41 1.41 M2 12h2 M20 12h2 M6.34 17.66l-1.41 1.41 M19.07 4.93l-1.41 1.41"/></svg>
+                    </div>
+                    <h3>Version Control</h3>
+                    <ul class="skill-list">
+                        <li>Git (branching, pull/push)</li>
+                        <li>GitHub (PAT, collaboration)</li>
+                        <li>Repository Management</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+                    </div>
+                    <h3>Cloud &amp; OS</h3>
+                    <ul class="skill-list">
+                        <li>AWS (EC2, regions)</li>
+                        <li>Ubuntu Linux, WSL</li>
+                        <li>Bash &amp; systemd</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3>Other</h3>
+                    <ul class="skill-list">
+                        <li>Ngrok &amp; Tunneling</li>
+                        <li>Configuration Management concepts</li>
+                        <li>Web Design &amp; Graphics Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category skill-soft">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87 M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Team Leadership &amp; Mentoring</li>
+                        <li>Conflict Resolution</li>
+                        <li>Problem-Solving under Pressure</li>
+                        <li>Process Improvement</li>
+                        <li>Reliability &amp; Accountability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">03. Projects</p>
+                <h2 class="section-title">Featured Work</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-pipeline">
+                            <div class="pipeline-step">GitHub</div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step">Jenkins</div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step">Docker</div>
+                            <div class="pipeline-arrow">→</div>
+                            <div class="pipeline-step">K8s</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <h3>End-to-End DevOps CI/CD Pipeline</h3>
+                            <a href="https://github.com/junaid2676/Junaid-DevOps" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                        <p class="project-desc">
+                            Designed and implemented a complete DevOps pipeline covering source control,
+                            continuous integration, containerisation, and Kubernetes orchestration.
+                        </p>
+                        <ul class="project-points">
+                            <li>Built Jenkins pipelines that automatically pull code from GitHub, build Docker images, and push to Docker Hub on every commit.</li>
+                            <li>Provisioned Ubuntu environment, installed Jenkins, configured non-root Docker permissions, and exposed the service via Ngrok for GitHub webhooks.</li>
+                            <li>Deployed applications on a local Kubernetes cluster (Minikube); configured Jenkins authentication and ran kubectl commands from pipeline jobs.</li>
+                            <li>Resolved real authentication, permission, and integration issues with clear root-cause analysis and documentation.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Jenkins</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">Ubuntu</span>
+                            <span class="tag">Ngrok</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">04. Experience</p>
+                <h2 class="section-title">Work &amp; Leadership</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2024 – Aug 2024 &nbsp;|&nbsp; Apr 2026 – Jun 2026</div>
+                        <h3>Manager <span class="timeline-org">— Chicken Rush</span></h3>
+                        <ul>
+                            <li>Led daily operations and supervised a team of 6+ staff, demonstrating clear communication and accountability.</li>
+                            <li>Managed stock control, supplier orders, and rota scheduling — transferable to resource and capacity planning in tech teams.</li>
+                            <li>Improved kitchen workflow and reduced food waste through process observation and continuous improvement.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2024 – Apr 2026</div>
+                        <h3>Barista Maestro / Assistant Manager <span class="timeline-org">— Costa Coffee</span></h3>
+                        <ul>
+                            <li>Led shifts in a high-volume store, ensuring smooth operations under pressure — directly relevant to incident response and on-call reliability mindsets.</li>
+                            <li>Trained and mentored new team members on service standards, building coaching and knowledge-transfer skills valuable in engineering teams.</li>
+                            <li>Handled cash reconciliation and stock ordering while driving consistent customer satisfaction.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jul 2024 – Oct 2024</div>
+                        <h3>Chef <span class="timeline-org">— YO! Sushi</span></h3>
+                        <ul>
+                            <li>Prepared dishes to strict brand standards in a fast-paced kitchen, demonstrating attention to detail, consistency, and ability to follow defined processes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2024 – Aug 2024</div>
+                        <h3>Clerical Marker <span class="timeline-org">— Cambridge Press &amp; Assessment</span></h3>
+                        <ul>
+                            <li>Marked exam scripts accurately against strict guidelines while consistently meeting daily volume and quality targets — evidence of reliability and precision.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">05. Education &amp; Certifications</p>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h3>BSc Computer Science</h3>
+                    <p class="edu-school">Anglia Ruskin University</p>
+                    <p class="edu-location">Cambridge, UK</p>
+                    <p class="edu-date">2024 – Present</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h3>A-Level Pre-Engineering</h3>
+                    <p class="edu-school">Punjab College</p>
+                    <p class="edu-date">2019 – 2021</p>
+                </div>
+            </div>
+            <div class="certifications">
+                <h3 class="cert-title">Certifications</h3>
+                <div class="cert-list">
+                    <span class="cert-item">Business Administration</span>
+                    <span class="cert-item">Executive Assistant Diploma</span>
+                    <span class="cert-item">Graphics Design Certificate</span>
+                    <span class="cert-item">Web Design Diploma</span>
+                    <span class="cert-item">Food Safety Level 2</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">06. Contact</p>
+                <h2 class="section-title">Let's work together</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-text">
+                        I'm currently open to <strong>Junior DevOps, Platform, Cloud, and CI/CD Engineer</strong> opportunities.
+                        Whether you have a question or just want to say hi, my inbox is always open!
+                    </p>
+                    <div class="contact-items">
+                        <a href="mailto:junaidj1266@gmail.com" class="contact-item">
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </span>
+                            <span>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">junaidj1266@gmail.com</span>
+                            </span>
+                        </a>
+                        <a href="tel:+447949298589" class="contact-item">
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </span>
+                            <span>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+44 7949 298589</span>
+                            </span>
+                        </a>
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </span>
+                            <span>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Cambridge, UK</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required rows="5" placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    <p class="form-status" id="formStatus"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#home" class="footer-logo">{ Junaid }</a>
+            <p class="footer-text">Built with Java · Designed &amp; developed by Junaid Junaid</p>
+            <div class="footer-social">
+                <a href="https://github.com/junaid2676" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:junaidj1266@gmail.com" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
