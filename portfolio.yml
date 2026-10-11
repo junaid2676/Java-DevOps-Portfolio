@@ -1,0 +1,13 @@
+---
+- name: Deploy Portfolio Application Container
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Ensure portfolio container is running
+      community.docker.docker_container:
+        name: portfolio-app
+        image: junaid2676/portfolio:latest
+        state: started
+        restart_policy: always
+        published_ports:
+          - "8080:80"
