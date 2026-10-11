@@ -8,19 +8,26 @@ pipeline {
         }
         stage('Build Java Application') {
             steps {
-                sh 'javac -d out src/main/java/com/junaid/portfolio/*.java src/main/java/com/junaid/portfolio/*/*.java'
+                sh '''
+                    mkdir -p out
+                    find src -name "*.java" > sources.txt
+                    javac -d out @sources.txt
+                '''
             }
         }
-        stage('Docker Build') {
+        stage('Docker Build & Push') {
             steps {
-                sh 'docker build -t java-portfolio:latest .'
+                sh '''
+                    docker build -t junaid2676/portfolio:latest .
+                    # docker login ... (if pushing to Docker Hub)
+                    # docker push junaid2676/portfolio:latest
+                '''
             }
         }
         stage('Deploy with Ansible') {
             steps {
-                sh 'ansible-playbook -i inventory portfolio.yml'
+                sh 'ansible-playbook -i inventory Portfolio.yml'   # match exact filename
             }
         }
     }
 }
-EOF
