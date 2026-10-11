@@ -3,6 +3,11 @@
   hosts: webservers
   become: no
   tasks:
+    - name: Remove existing portfolio container if present
+      community.docker.docker_container:
+        name: portfolio-app
+        state: absent
+
     - name: Ensure portfolio container is running
       community.docker.docker_container:
         name: portfolio-app
@@ -10,4 +15,4 @@
         state: started
         restart_policy: always
         published_ports:
-          - "8080:8080"
+          - "8090:8080"
