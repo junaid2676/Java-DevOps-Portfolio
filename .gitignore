@@ -1,0 +1,23 @@
+# Build output
+out/
+target/
+*.class
+
+# Maven
+*.jar
+*.war
+*.ear
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
